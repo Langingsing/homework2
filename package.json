@@ -4,13 +4,13 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://langingsing.github.io/homework2",
-  "predeploy": "npm run build",
-  "deploy": "gh-pages -d build",
   "scripts": {
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "@types/mockjs": "^1.0.10",
